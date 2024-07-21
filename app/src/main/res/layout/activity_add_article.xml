@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEDED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SimpleBlog"
+            android:textColor="#000"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Ajouter un article"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextTitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_editext_bg"
+            android:hint="Titre"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:minHeight="60dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextContenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_editext_bg"
+            android:gravity="top|center"
+            android:hint="Contenu"
+            android:inputType="text"
+            android:minHeight="255sp"
+            android:textColor="@color/black"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/addArticleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:background="@drawable/button"
+            app:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:minHeight="60sp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/returnButtun"
+        android:background="@drawable/circle_btn"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        app:backgroundTint="@color/black"/>
+
+</RelativeLayout>
